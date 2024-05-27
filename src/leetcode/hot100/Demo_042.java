@@ -5,11 +5,28 @@ package leetcode.hot100;
  * @Date: 2024/05/06
  * @Project: coding
  * @Description: 接雨水
- *
  * 给定 n 个非负整数表示每个宽度为 1 的柱子的高度图，计算按此排列的柱子，下雨之后能接多少雨水
  *
+ * https://leetcode.cn/problems/trapping-rain-water
  */
 public class Demo_042 {
+
+    public int trap2(int[] height) {
+        int n = height.length;
+        int l = 1, r = n - 2, lmax = height[0], rmax = height[n - 1];
+        int ans = 0;
+        while (l <= r) {
+            if (lmax < rmax) {
+                ans += Math.max(0, lmax - height[l]);
+                lmax = Math.max(lmax, height[l++]);
+            } else {
+                ans += Math.max(0, rmax - height[r]);
+                rmax = Math.max(rmax, height[r--]);
+            }
+        }
+        return ans;
+    }
+
     // 双指针优化遍历
     public int trap(int[] height) {
         int n = height.length;
