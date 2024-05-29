@@ -1,6 +1,5 @@
-package qianxin;
+package test.qianxin;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 /**

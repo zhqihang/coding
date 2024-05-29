@@ -1,4 +1,4 @@
-package yunzhi;
+package test.yunzhi;
 
 import java.util.Scanner;
 
