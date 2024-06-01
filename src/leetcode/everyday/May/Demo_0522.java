@@ -1,6 +1,5 @@
-package leetcode.everyday;
+package leetcode.everyday.May;
 
-import java.lang.reflect.Array;
 import java.util.*;
 
 /**

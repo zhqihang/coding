@@ -1,6 +1,4 @@
-package leetcode.everyday;
-
-import java.util.Arrays;
+package leetcode.everyday.May;
 
 /**
  * @Author: zhqihang

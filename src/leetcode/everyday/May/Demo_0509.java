@@ -1,6 +1,4 @@
-package leetcode.everyday;
-
-import java.nio.file.Path;
+package leetcode.everyday.May;
 
 /**
  * @Author: zhqihang

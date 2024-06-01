@@ -1,8 +1,6 @@
-package leetcode.everyday;
+package leetcode.everyday.May;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Comparator;
 
 /**
  * @Author: zhqihang

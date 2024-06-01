@@ -1,4 +1,4 @@
-package leetcode.everyday;
+package leetcode.everyday.May;
 
 import java.util.Arrays;
 

@@ -1,8 +1,5 @@
-package leetcode.everyday;
+package leetcode.everyday.May;
 
-import test.IntegerTest;
-
-import java.lang.invoke.VarHandle;
 import java.util.HashMap;
 import java.util.Map;
 
