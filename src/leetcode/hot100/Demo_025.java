@@ -1,5 +1,7 @@
 package leetcode.hot100;
 
+import java.util.List;
+
 /**
  * @Author: zhqihang
  * @Date: 2024/05/28
@@ -14,13 +16,49 @@ package leetcode.hot100;
 public class Demo_025 {
 
     public ListNode reverseKGroup(ListNode head, int k) {
+        ListNode start = head;
+        ListNode end = teamEnd(start, k);
+        if (end == null) return head;
 
-
-        return null;
+        head = end; // 第一组翻转前的尾 是 结果 的头指针
+        reverse(start, end); // 翻转 start -- end 的链表
+        ListNode lastTeamEnd = start;
+        // 还有下一组
+        while (lastTeamEnd.next != null) {
+            // 翻转
+            start = lastTeamEnd.next;
+            end = teamEnd(start, k);
+            // 此时最后一组只有一个节点 不用翻转 直接结束
+            if (end == null) return head;
+            reverse(start, end);
+            // 不同组之间的链接
+            lastTeamEnd.next = end; // 上一组的末尾 指向 当前组反转后的 end
+            lastTeamEnd = start; // 更新 开始处理下一组
+        }
+        return head;
     }
 
+    private void reverse(ListNode start, ListNode end) {
+        end = end.next; // 记录翻转前 尾指针后继
+        ListNode pre = null, cur = start, next = null;
+        while (cur != end) {
+            next = cur.next;
+            cur.next = pre;
+            pre = cur;
+            cur = next;
+        }
+        start.next = end; // 更新翻转后 尾指针后继
+    }
 
-   private static class ListNode {
+    // 获取一组的最后一个节点 (考虑最后一组长度不满足 k)
+    private ListNode teamEnd(ListNode start, int k) {
+        while (--k != 0 && start != null) {
+            start = start.next;
+        }
+        return start;
+    }
+
+    private static class ListNode {
        int val;
        ListNode next;
 
