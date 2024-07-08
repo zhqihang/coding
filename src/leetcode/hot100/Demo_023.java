@@ -17,7 +17,31 @@ public class Demo_023 {
 
     // 最小堆
     public ListNode mergeKLists(ListNode[] lists) {
-        return null;
+        // 优先队列实现最小堆
+        PriorityQueue<ListNode> pq = new PriorityQueue<>((a, b) -> a.val - b.val);
+        for (ListNode head : lists) {
+            if (head != null) {
+                pq.offer(head);
+            }
+        }
+        // 哨兵节点 作为合并后链表头结点的前驱
+        ListNode dummy = new ListNode();
+        ListNode cur = dummy;
+        // 循环到队空为止
+        while (!pq.isEmpty()) {
+            // 剩余节点中的最小节点
+            ListNode node = pq.poll();
+            // 下一个节点不为空
+            if (node.next != null) {
+                // 入堆
+                pq.offer(node.next);
+            }
+            // 并入新链表中
+            cur.next = node;
+            // 指针后移 准备合并下一节点
+            cur = cur.next;
+        }
+        return dummy.next;
     }
 
 

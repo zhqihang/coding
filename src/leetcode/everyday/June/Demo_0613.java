@@ -12,16 +12,14 @@ package leetcode.everyday.June;
  * 你的任务是从 items 所有长度为 k 的子序列中，找出 最大优雅度 。
  * 用整数形式表示并返回 items 中所有长度恰好为 k 的子序列的最大优雅度。
  * 注意：数组的子序列是经由原数组删除一些元素（可能不删除）而产生的新数组，且删除不改变其余元素相对顺序。
- *
+ * <p>
  * 输入：items = [[3,2],[5,1],[10,1]], k = 2
  * 输出：17
- *
  */
 public class Demo_0613 {
 
 
     public long findMaximumElegance(int[][] items, int k) {
-
 
 
         return 0;

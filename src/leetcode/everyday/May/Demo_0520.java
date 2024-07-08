@@ -12,13 +12,12 @@ import java.util.Arrays;
  * - 该字符串是 s 的一个非空子字符串
  * - 进行任意次数的字符交换后，该字符串可以变成一个回文字符串
  * https://leetcode.cn/problems/find-longest-awesome-substring/description
- *
+ * <p>
  * 解题思路: 前缀异或和 表示字母出现的次数奇偶性
- *
- *
  */
 public class Demo_0520 {
     public static final int D = 10; // s 中字符的种类数
+
     public int longestAwesome(String s) {
         int n = s.length();
         // 初始化 异或前缀和 数组

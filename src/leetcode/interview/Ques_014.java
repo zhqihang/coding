@@ -23,6 +23,7 @@ public class Ques_014 {
         }
         return prefix;
     }
+
     private String longestCommonPrefix(String str1, String str2) {
         int length = Math.min(str1.length(), str2.length());
         int index = 0;

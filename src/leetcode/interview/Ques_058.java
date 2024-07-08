@@ -16,13 +16,13 @@ public class Ques_058 {
     public static int lengthOfLastWord(String s) {
         int index = s.length() - 1;
         // 处理末尾空格
-        while (s.charAt(index) == ' '){
+        while (s.charAt(index) == ' ') {
             index--;
         }
 
         //
         int wordLength = 0;
-        while (index >= 0 && s.charAt(index) != ' '){
+        while (index >= 0 && s.charAt(index) != ' ') {
             wordLength++;
             index--;
         }

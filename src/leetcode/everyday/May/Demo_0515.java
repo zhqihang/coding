@@ -19,12 +19,11 @@ import java.util.Arrays;
  * 输出：2
  * <p>
  * 我的思路: 我没有思路
- *
+ * <p>
  * 题解: 从右往左增加时间点
- *
+ * <p>
  * 方法一: 贪心 + 暴力
  * 方法二: 栈 + 二分查找
- *
  */
 public class Demo_0515 {
     public int findMinimumTime(int[][] tasks) {

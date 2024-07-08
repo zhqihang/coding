@@ -4,8 +4,7 @@ package leetcode.everyday.May;
  * @Author: zhqihang
  * @Date: 2024/05/18
  * @Project: coding
- * @Description:
- * https://leetcode.cn/problems/find-the-maximum-divisibility-score
+ * @Description: https://leetcode.cn/problems/find-the-maximum-divisibility-score
  */
 public class Demo_0518 {
 

@@ -4,9 +4,7 @@ package learn.class30;
  * @Author: zhqihang
  * @Date: 2024/01/22
  * @Project: coding
- * @Description:
- *
- * 数组中1种数出现了奇数次，其他的数都出现了偶数次
+ * @Description: 数组中1种数出现了奇数次，其他的数都出现了偶数次
  * 返回出现了奇数次的数
  * 测试链接 : https://leetcode.cn/problems/single-number/
  */

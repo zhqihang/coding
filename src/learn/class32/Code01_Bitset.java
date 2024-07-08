@@ -22,17 +22,17 @@ public class Code01_Bitset {
         for (int i = 0; i < testTimes; i++) {
             double decide = Math.random();
             int number = (int) (Math.random() * n);
-            if (decide <  0.33){
+            if (decide < 0.33) {
                 bitset.add(number);
                 hashSet.add(number);
-            }else if (decide < 0.666){
+            } else if (decide < 0.666) {
                 bitset.remove(number);
                 hashSet.remove(number);
-            }else {
+            } else {
                 bitset.reverse(number);
-                if (hashSet.contains(number)){
+                if (hashSet.contains(number)) {
                     hashSet.remove(number);
-                }else {
+                } else {
                     hashSet.add(number);
                 }
             }
@@ -40,7 +40,7 @@ public class Code01_Bitset {
         System.out.println("调用阶段结束");
         System.out.println("验证阶段开始");
         for (int i = 0; i < n; i++) {
-            if (bitset.contains(i) != hashSet.contains(i)){
+            if (bitset.contains(i) != hashSet.contains(i)) {
                 System.out.println("出错了！");
             }
 
@@ -75,6 +75,7 @@ public class Code01_Bitset {
         public void reverse(int num) {
             set[num / 32] ^= 1 << (num % 32);
         }
+
         // 查看数字状态 等于1存在 等于0不存在
         public boolean contains(int num) {
             return ((set[num / 32] >> (num % 32)) & 1) == 1;

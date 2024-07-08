@@ -20,10 +20,10 @@ public class TestVolatile {
     }
 
 
-    public static void tenDown() throws InterruptedException{
+    public static void tenDown() throws InterruptedException {
 
         Date startTime = new Date(System.currentTimeMillis());//获取系统当前时间
-        while(true){
+        while (true) {
             try {
                 Thread.sleep(1000);
                 clearLine();

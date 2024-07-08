@@ -35,9 +35,9 @@ public class Ques_141 {
     }
 
     // 哈希表 记录节点是否被访问过
-    public static boolean hasCycle(ListNode head){
+    public static boolean hasCycle(ListNode head) {
         Set<ListNode> nodes = new HashSet<>();
-        while (head != null){
+        while (head != null) {
             if (nodes.add(head))
                 head = head.next;
             else
@@ -46,13 +46,13 @@ public class Ques_141 {
         return false;
     }
 
-    public static boolean hasCycle2(ListNode head){
-        if (head ==null || head.next==null) return false;
+    public static boolean hasCycle2(ListNode head) {
+        if (head == null || head.next == null) return false;
         ListNode slow = head, fast = head.next;
         // 只要不相等就循环
         // 循环中判断是否return
-        while (slow != fast){
-            if (fast == null || fast.next ==null)
+        while (slow != fast) {
+            if (fast == null || fast.next == null)
                 return false;
             slow = slow.next;
             fast = fast.next.next;
@@ -67,7 +67,7 @@ public class Ques_141 {
         if (head.next == null) return false;
 
         ListNode slow = head, fast = head.next;
-        while (fast!= null && fast.next != null) {
+        while (fast != null && fast.next != null) {
             if (slow == fast)
                 return true;
             slow = slow.next;

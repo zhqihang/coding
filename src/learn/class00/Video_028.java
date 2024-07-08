@@ -34,7 +34,7 @@ public class Video_028 {
         PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
 
         // 循环读入 并进行相应操作
-        while (in.nextToken() != StreamTokenizer.TT_EOF){ // 控制台 ctrl + D
+        while (in.nextToken() != StreamTokenizer.TT_EOF) { // 控制台 ctrl + D
             n = (int) in.nval;
             for (int i = 0; i < n; i++) {
                 in.nextToken();

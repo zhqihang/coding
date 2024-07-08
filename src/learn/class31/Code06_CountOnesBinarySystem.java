@@ -15,6 +15,7 @@ public class Code06_CountOnesBinarySystem {
     public int hammingDistance(int x, int y) {
         return cntOnes(x ^ y);
     }
+
     private static int cntOnes(int n) {
         // 长度为1中的1的个数 --> 长度为2中的
         n = (n & 0x55555555) + ((n >>> 1) & 0x55555555);

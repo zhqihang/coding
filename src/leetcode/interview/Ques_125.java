@@ -23,7 +23,7 @@ public class Ques_125 {
 
         int n = sb.length();
         int left = 0, right = n - 1;
-        while (left < right){
+        while (left < right) {
             if (sb.charAt(left) != sb.charAt(right))
                 return false;
             left++;

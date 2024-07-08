@@ -25,6 +25,7 @@ import java.util.Map;
 public class Demo_0512 {
     // 记忆集合
     public static Map<Integer, Integer> memo = new HashMap<>();
+
     // 深度优先搜索
     public int minDays(int n) {
         // 递归出口

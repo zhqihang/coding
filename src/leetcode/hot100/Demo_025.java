@@ -11,7 +11,6 @@ import java.util.List;
  * k 是一个正整数，它的值小于或等于链表的长度。如果节点总数不是 k 的整数倍，那么请将最后剩余的节点保持原有顺序。
  * 你不能只是单纯的改变节点内部的值，而是需要实际进行节点交换。
  * https://leetcode.cn/problems/reverse-nodes-in-k-group/description
- *
  */
 public class Demo_025 {
 
@@ -59,20 +58,20 @@ public class Demo_025 {
     }
 
     private static class ListNode {
-       int val;
-       ListNode next;
+        int val;
+        ListNode next;
 
-       ListNode() {
-       }
+        ListNode() {
+        }
 
-       ListNode(int val) {
-           this.val = val;
-       }
+        ListNode(int val) {
+            this.val = val;
+        }
 
-       ListNode(int val, ListNode next) {
-           this.val = val;
-           this.next = next;
+        ListNode(int val, ListNode next) {
+            this.val = val;
+            this.next = next;
 
-       }
-   }
+        }
+    }
 }

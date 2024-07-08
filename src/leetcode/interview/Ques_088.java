@@ -31,10 +31,12 @@ public class Ques_088 {
     // 每次比较两个数组的末尾元素，将较大的元素放在合并后的数组的末尾，然后将指针向前移动一位，
     // 重复这个过程，直到两个数组的指针都指向了数组的开头。
     private static void merge2(int[] nums1, int m, int[] nums2, int n) {
-        if (m == 0){ return; }
+        if (m == 0) {
+            return;
+        }
         int i = m - 1;
         int j = n - 1;
-        for (int k = m + n - 1; j >= 0 ; k--) {
+        for (int k = m + n - 1; j >= 0; k--) {
 
             if (nums1[i] > nums2[j]) {
                 nums1[k] = nums1[i];

@@ -12,14 +12,13 @@ import java.util.List;
  * @Description: 合并区间
  * 以二维数组 intervals 表示若干个区间的集合，其中单个区间为 intervals[i] = [starti, endi] 。
  * 请你合并所有重叠的区间，并返回 一个不重叠的区间数组，该数组需恰好覆盖输入中的所有区间 。
- *
+ * <p>
  * 思路:
  * 先按第一个维度(区间左边界)对区间进行排序
  * 然后逐个加入链表
  * 加入时判断 此区间的左边界 和 链表最后一个区间的右边界 是否重叠
  * 不重叠 加入链表 继续
  * 重叠 更新最后一个区间的右边界(取最大值--考虑区间包含) 不加入链表 继续
- *
  */
 public class Demo_056 {
 
@@ -31,7 +30,9 @@ public class Demo_056 {
         //         return o1[0] - o2[0];
         //     }
         // });
-        Arrays.sort(intervals, (o1, o2) -> {return o1[0] - o2[0];});
+        Arrays.sort(intervals, (o1, o2) -> {
+            return o1[0] - o2[0];
+        });
         // 合并操作: 使用链表存储数组
         // 合并链表
         List<int[]> merge = new ArrayList<>();

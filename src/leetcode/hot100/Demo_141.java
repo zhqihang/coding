@@ -13,10 +13,10 @@ import java.util.Set;
  * 为了表示给定链表中的环，评测系统内部使用整数 pos 来表示链表尾连接到链表中的位置（索引从 0 开始）。
  * 注意：pos 不作为参数进行传递 。仅仅是为了标识链表的实际情况
  * https://leetcode.cn/problems/linked-list-cycle/description
- *
+ * <p>
  * 解题思路:
- *      解法一: 双指针移动 如果相遇即有环
- *      解法二: 使用Set集合保存节点信息 遍历 如果遇到重复值 则有环
+ * 解法一: 双指针移动 如果相遇即有环
+ * 解法二: 使用Set集合保存节点信息 遍历 如果遇到重复值 则有环
  */
 public class Demo_141 {
 

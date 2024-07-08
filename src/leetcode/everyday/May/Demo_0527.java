@@ -15,7 +15,7 @@ package leetcode.everyday.May;
  * 注意 mean 是一个整数，所以 n + m 次投掷的总和需要被 n + m 整除。
  * 输入：rolls = [3,2,4,3], mean = 4, n = 2
  * 输出：[6,6]
- *
+ * <p>
  * https://leetcode.cn/problems/find-missing-observations/description
  */
 public class Demo_0527 {

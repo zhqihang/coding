@@ -6,14 +6,15 @@ package leetcode.hot100;
  * @Project: coding
  * @Description: 二叉树的直径
  * https://leetcode.cn/problems/diameter-of-binary-tree/description/
- *
  */
 public class Demo_543 {
     private int ans;
+
     public int diameterOfBinaryTree(TreeNode root) {
         dfs(root);
         return ans;
     }
+
     private int dfs(TreeNode node) {
         if (node == null) return -1;
         int lLen = dfs(node.left) + 1;

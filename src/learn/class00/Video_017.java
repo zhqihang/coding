@@ -1,32 +1,29 @@
 package learn.class00;
 
-import javax.swing.tree.TreeNode;
 
 /**
  * @author: qihang
  * @CreateDate: 2023/12/14/ 9:17
  * @Project: coding
- * @Description:
- *
- *  二叉树 三序遍历递归实现
- *  先序: 中 左 右  第一次经过写入
- *  中序: 左 中 右  第二次经过写入
- *  后序: 左 右 中  第三次经过写入
+ * @Description: 二叉树 三序遍历递归实现
+ * 先序: 中 左 右  第一次经过写入
+ * 中序: 左 中 右  第二次经过写入
+ * 后序: 左 右 中  第三次经过写入
  */
 public class Video_017 {
 
     // 递归先序遍历
-    public static void preOrder(TreeNode head){
-        if (head == null){
+    public static void preOrder(TreeNode head) {
+        if (head == null) {
             return;
         }
-        System.out.print(head.val+" "); // 打印
+        System.out.print(head.val + " "); // 打印
         preOrder(head.left); // 递归左子树
         preOrder(head.right); // 递归右子树
     }
 
-    public static void inOrder(TreeNode head){
-        if (head==null){
+    public static void inOrder(TreeNode head) {
+        if (head == null) {
             return;
         }
         inOrder(head.left);
@@ -35,8 +32,8 @@ public class Video_017 {
     }
 
 
-    public static void posOrder(TreeNode head){
-        if (head==null){
+    public static void posOrder(TreeNode head) {
+        if (head == null) {
             return;
         }
         posOrder(head.left);

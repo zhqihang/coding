@@ -160,14 +160,14 @@ public class MyHashMap<K, V> {
      * @param key
      * @return
      */
-    public V get(K key){
+    public V get(K key) {
         // 获取key的对应地址
         int index = getIndex(key, buckets.length);
         if (buckets[index] == null) return null;
         Node<K, V> node = buckets[index];
         // 查找链表
-        while (node != null){
-            if (node.key.hashCode() == key.hashCode() && (node.key==key || node.key.equals(key))){
+        while (node != null) {
+            if (node.key.hashCode() == key.hashCode() && (node.key == key || node.key.equals(key))) {
                 return node.value;
             }
             node = node.next;
@@ -180,7 +180,7 @@ public class MyHashMap<K, V> {
      *
      * @return
      */
-    public int size(){
+    public int size() {
         return size;
     }
 }

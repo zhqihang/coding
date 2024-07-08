@@ -11,7 +11,6 @@ import java.util.Arrays;
  * 每艘船最多可同时载两人，但条件是这些人的重量之和最多为 limit。
  * 返回 承载所有人所需的最小船数 。
  * https://leetcode.cn/problems/boats-to-save-people/description/
- *
  */
 public class Demo_0610 {
 

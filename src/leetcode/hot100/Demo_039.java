@@ -17,7 +17,6 @@ import java.util.List;
  * https://leetcode.cn/problems/combination-sum/description//
  * 输入：candidates = [2,3,6,7], target = 7
  * 输出：[[2,2,3],[7]]
- *
  */
 public class Demo_039 {
     public List<List<Integer>> combinationSum(int[] candidates, int target) {

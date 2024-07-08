@@ -13,16 +13,15 @@ package leetcode.everyday.June;
  * 请你返回一个整数，表示你在愿意支出金额为 purchaseAmount 块钱的前提下，购买之后剩下的余额。
  * 注意： 0 也是 10 的倍数。
  * https://leetcode.cn/problems/account-balance-after-rounded-purchase/description/
- *
+ * <p>
  * 输入：purchaseAmount = 9
  * 输出：90
  * 解释：这个例子中，最接近 9 的 10 的倍数是 10 。所以你的账户余额为 100 - 10 = 90 。
- *
+ * <p>
  * 输入：purchaseAmount = 15
  * 输出：80
  * 解释：这个例子中，有 2 个最接近 15 的 10 的倍数：10 和 20，较大的数 20 是你的实际开销。
  * 所以你的账户余额为 100 - 20 = 80 。
- *
  */
 public class Demo_0612 {
     public int accountBalanceAfterPurchase(int purchaseAmount) {

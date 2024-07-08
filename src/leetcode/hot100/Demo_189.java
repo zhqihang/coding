@@ -8,7 +8,6 @@ package leetcode.hot100;
  * 给定一个整数数组 nums，将数组中的元素向右轮转 k 个位置，其中 k 是非负数。
  * <p>
  * 思路:
- *
  */
 public class Demo_189 {
 
@@ -27,7 +26,7 @@ public class Demo_189 {
                 nums[next] = pre;
                 pre = tmp;
                 cur = next;
-            }while (start != cur);
+            } while (start != cur);
         }
     }
 

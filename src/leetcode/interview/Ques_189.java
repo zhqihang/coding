@@ -30,7 +30,7 @@ public class Ques_189 {
     }
 
     private int gcd(int x, int y) {
-        return y > 0 ? gcd( y, x % y) : x;
+        return y > 0 ? gcd(y, x % y) : x;
     }
 
 

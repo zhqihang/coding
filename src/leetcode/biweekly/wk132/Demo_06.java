@@ -17,6 +17,7 @@ import java.util.Arrays;
  */
 public class Demo_06 {
     private static final int MOD = 1000000007;
+
     // 每过一秒 所有元素同时更新
     public static int valueAfterKSeconds(int n, int k) {
         return combination(n + k - 1, k);

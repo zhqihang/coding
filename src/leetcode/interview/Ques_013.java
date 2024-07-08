@@ -13,9 +13,9 @@ public class Ques_013 {
     public static void main(String[] args) {
         System.out.println("请输入罗马数字，回车结束！");
         Scanner scanner = new Scanner(System.in);
-        while (scanner.hasNext()){
+        while (scanner.hasNext()) {
             String next = scanner.next();
-            if ("1".equals(next)){
+            if ("1".equals(next)) {
                 System.exit(0);
             }
             System.out.println(romanToInt(next));

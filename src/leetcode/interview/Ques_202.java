@@ -35,7 +35,7 @@ public class Ques_202 {
         // 终止条件：
         // 1. fastRunner = 1     true
         // 2. slowRunner = fastRunner   false
-        while (fastRunner != 1 && slowRunner != fastRunner){
+        while (fastRunner != 1 && slowRunner != fastRunner) {
             slowRunner = getNext(slowRunner);
             fastRunner = getNext(getNext(fastRunner));
         }
@@ -50,7 +50,7 @@ public class Ques_202 {
         // 循环的条件：n不等于1 并且n 不在集合中
         // n = 1 是快乐数
         // n 在集合中，则进入无限循环
-        while (n != 1 && !set.contains(n)){
+        while (n != 1 && !set.contains(n)) {
             set.add(n);
             n = getNext(n);
         }
@@ -59,9 +59,9 @@ public class Ques_202 {
 
     private static int getNext(int n) {
         int total = 0;
-        while (n > 0){
+        while (n > 0) {
             int d = n % 10;
-            n = n /10;
+            n = n / 10;
             total += d * d;
         }
         return total;

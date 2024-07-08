@@ -7,5 +7,5 @@ package learn.class56;
  * @Description: ...
  */
 public class Demo01 {
-    
+
 }

@@ -9,9 +9,8 @@ import java.util.List;
  * @Description: 合并两个有序链表
  * 将两个升序链表合并为一个新的 升序 链表并返回。
  * 新链表是通过拼接给定的两个链表的所有节点组成的。
- *
+ * <p>
  * https://leetcode.cn/problems/merge-two-sorted-lists/description
- *
  */
 public class Demo_021 {
 
@@ -43,10 +42,14 @@ public class Demo_021 {
     private static class ListNode {
         int val;
         ListNode next;
-        ListNode() {}
+
+        ListNode() {
+        }
+
         ListNode(int val) {
             this.val = val;
         }
+
         ListNode(int val, ListNode next) {
             this.val = val;
             this.next = next;

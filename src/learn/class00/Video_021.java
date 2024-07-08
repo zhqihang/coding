@@ -6,8 +6,7 @@ import java.io.*;
  * @author: qihang
  * @CreateDate: 2023/12/18/ 15:49
  * @Project: coding
- * @Description:
- * 归并排序
+ * @Description: 归并排序
  * 1）左部分排好序、右部分排好序、利用merge过程让左右整体有序
  * 2）merge过程：谁小拷贝谁，直到左右两部分所有的数字耗尽，拷贝回原数组
  * 3）递归实现和非递归实现

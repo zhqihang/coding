@@ -11,7 +11,7 @@ package learn.class31;
  */
 public class Code04_LeftToRightAnd {
     public static int rangeBitwiseAnd(int left, int right) {
-        while (left < right){
+        while (left < right) {
             // 只要不相等 每次最右侧的 1 无意义（存在0 与之&） right - 最右侧的1 继续判断
             right -= right & -right;
         }

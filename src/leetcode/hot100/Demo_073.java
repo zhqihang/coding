@@ -4,10 +4,7 @@ package leetcode.hot100;
  * @Author: zhqihang
  * @Date: 2024/05/07
  * @Project: coding
- * @Description:
- *
- * 矩阵置0 (七牛云笔试题)
- *
+ * @Description: 矩阵置0 (七牛云笔试题)
  */
 public class Demo_073 {
 

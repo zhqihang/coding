@@ -7,7 +7,6 @@ package leetcode.hot100;
  * @Description: 翻转二叉树
  * 给你一棵二叉树的根节点 root ，翻转这棵二叉树，并返回其根节点。
  * https://leetcode.cn/problems/invert-binary-tree/description
- *
  */
 public class Demo_226 {
 
@@ -25,8 +24,14 @@ public class Demo_226 {
         int val;
         TreeNode left;
         TreeNode right;
-        TreeNode() {}
-        TreeNode(int val) { this.val = val; }
+
+        TreeNode() {
+        }
+
+        TreeNode(int val) {
+            this.val = val;
+        }
+
         TreeNode(int val, TreeNode left, TreeNode right) {
             this.val = val;
             this.left = left;

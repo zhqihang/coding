@@ -9,8 +9,8 @@ package leetcode.lcr;
 public class LCR_122 {
     public String pathEncryption(String path) {
         StringBuilder sb = new StringBuilder();
-        for(Character c : path.toCharArray()){
-            if(c == '.')
+        for (Character c : path.toCharArray()) {
+            if (c == '.')
                 sb.append(' ');
             else
                 sb.append(c);

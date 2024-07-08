@@ -11,7 +11,7 @@ public class LCR_127 {
         final int MOD = 1000000007;
         // 滚动数组实现
         int p = 0, q = 0, r = 1;
-        for(int i = 1; i <= num; i++){
+        for (int i = 1; i <= num; i++) {
             p = q;
             q = r;
             r = (p + q) % MOD;

@@ -33,9 +33,9 @@ public class Ques_012 {
     public static void main(String[] args) {
         System.out.println("请输入数字，回车结束！");
         Scanner scanner = new Scanner(System.in);
-        while (scanner.hasNext()){
+        while (scanner.hasNext()) {
             int next = scanner.nextInt();
-            if (next == -1){
+            if (next == -1) {
                 System.exit(0);
             }
             System.out.println(intoRoman(next));

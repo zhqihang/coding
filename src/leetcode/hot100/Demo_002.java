@@ -10,9 +10,8 @@ package leetcode.hot100;
  * 请你将两个数相加，并以相同形式返回一个表示和的链表。
  * 你可以假设除了数字 0 之外，这两个数都不会以 0 开头。
  * https://leetcode.cn/problems/add-two-numbers/description
- *
+ * <p>
  * 相加 还要倒序 还要考虑进位
- *
  */
 public class Demo_002 {
     // 新链表接受两个链表的值
@@ -48,13 +47,18 @@ public class Demo_002 {
         }
         return ans;
     }
+
     private static class ListNode {
         int val;
         ListNode next;
-        ListNode() {}
+
+        ListNode() {
+        }
+
         ListNode(int val) {
             this.val = val;
         }
+
         ListNode(int val, ListNode next) {
             this.val = val;
             this.next = next;

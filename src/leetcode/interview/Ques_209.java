@@ -7,14 +7,14 @@ package leetcode.interview;
  * @Description: ...
  */
 public class Ques_209 {
-    public int minSubArrayLen(int target, int[] nums){
+    public int minSubArrayLen(int target, int[] nums) {
         int left = 0;
         int sum = 0;
         int result = Integer.MAX_VALUE;
         // 遍历数组
-        for(int right = 0; right < nums.length; right++){
+        for (int right = 0; right < nums.length; right++) {
             sum += nums[right];
-            while(sum < target){
+            while (sum < target) {
                 result = Math.min(result, right - left + 1);
                 sum -= nums[left++];
             }

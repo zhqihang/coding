@@ -10,9 +10,8 @@ import java.util.List;
  * @Description: 二叉树的右视图
  * 给定一个二叉树的 根节点 root，想象自己站在它的右侧，按照从顶部到底部的顺序，返回从右侧所能看到的节点值。
  * https://leetcode.cn/problems/binary-tree-right-side-view/description
- *
+ * <p>
  * 思路: 层序遍历 每层的最后一个节点
- *
  */
 public class Demo_199 {
 
@@ -48,8 +47,14 @@ public class Demo_199 {
         int val;
         TreeNode left;
         TreeNode right;
-        TreeNode() {}
-        TreeNode(int val) { this.val = val; }
+
+        TreeNode() {
+        }
+
+        TreeNode(int val) {
+            this.val = val;
+        }
+
         TreeNode(int val, TreeNode left, TreeNode right) {
             this.val = val;
             this.left = left;

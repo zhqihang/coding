@@ -63,7 +63,7 @@ public class Ques_112 {
      * @return
      */
     public boolean hasPathSum1(TreeNode root, int targetSum) {
-        if (root == null){
+        if (root == null) {
             return false;
         }
         // 存放要遍历的节点
@@ -74,25 +74,25 @@ public class Ques_112 {
         queNode.offer(root);
         queVal.offer(root.val);
 
-        while (!queNode.isEmpty()){
+        while (!queNode.isEmpty()) {
 
             TreeNode now = queNode.poll();
             int temp = queVal.poll();
 
             if (now.left == null && now.right == null) {
                 // 出口
-                if (temp == targetSum){
+                if (temp == targetSum) {
                     return true;
                 }
                 continue;
             }
             // 入队
-            if (now.left != null){
+            if (now.left != null) {
                 queNode.offer(now.left);
                 queVal.offer(now.left.val + temp);
             }
             // 入队
-            if (now.right != null){
+            if (now.right != null) {
                 queNode.offer(now.right);
                 queVal.offer(now.right.val + temp);
             }

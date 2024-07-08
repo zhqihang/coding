@@ -5,12 +5,12 @@ package leetcode.hot100;
  * @Date: 2024/06/07
  * @Project: coding
  * @Description: 验证二叉搜索树
- *
+ * <p>
  * https://leetcode.cn/problems/validate-binary-search-tree
- *
  */
 public class Demo_098 {
     public static long min, max;
+
     public boolean isValidBST(TreeNode root) {
         if (root == null) {
             min = Long.MAX_VALUE;
@@ -35,8 +35,14 @@ public class Demo_098 {
         int val;
         TreeNode left;
         TreeNode right;
-        TreeNode() {}
-        TreeNode(int val) { this.val = val; }
+
+        TreeNode() {
+        }
+
+        TreeNode(int val) {
+            this.val = val;
+        }
+
         TreeNode(int val, TreeNode left, TreeNode right) {
             this.val = val;
             this.left = left;

@@ -13,7 +13,7 @@ public class LCR_170 {
     public int reversePairs(int[] record) {
         int n = record.length;
         help = new int[n];
-        return mergeSort(record,0, n - 1);
+        return mergeSort(record, 0, n - 1);
     }
 
     private int mergeSort(int[] record, int l, int r) {

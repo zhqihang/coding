@@ -12,7 +12,7 @@ public class TestJoin implements Runnable {
     @Override
     public void run() {
         for (int i = 0; i < 1000; i++) {
-            System.out.println("线程vip来了"+i);
+            System.out.println("线程vip来了" + i);
         }
     }
 
@@ -24,10 +24,10 @@ public class TestJoin implements Runnable {
 
         //主线程
         for (int i = 0; i < 500; i++) {
-            if (i==200){
+            if (i == 200) {
                 thread.join();
             }
-            System.out.println("main"+i);
+            System.out.println("main" + i);
         }
     }
 }

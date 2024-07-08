@@ -7,8 +7,6 @@ package leetcode.hot100;
  * @Description: 反转链表
  * 给你单链表的头节点 head ，请你反转链表，并返回反转后的链表。
  * https://leetcode.cn/problems/reverse-linked-list/description
- *
- *
  */
 public class Demo_206 {
     public ListNode reverseList(ListNode head) {
@@ -27,6 +25,7 @@ public class Demo_206 {
     private static class ListNode {
         int val;
         ListNode next;
+
         ListNode(int x) {
             val = x;
             next = null;

@@ -17,7 +17,7 @@ import java.util.Scanner;
  * 1 <= Hp,Att <= 1000
  * 1<= n <=100
  * 1 <= h[i], a[i], m[i] <= 1000
- *
+ * <p>
  * 输入描述: 武松血量 / 武松攻击伤害值 / 老虎血量数组 / 老虎攻击伤害值数组 / 老虎赏金数组
  * 输入: 1, 1, [1, 1, 2, 1], [1, 1, 1, 1], [1, 2, 4, 8]
  * 输出: 11
@@ -30,6 +30,7 @@ public class Demo_02 {
         ArrayList<Integer> arr1 = new ArrayList<>();
 
     }
+
     public int f(int hp, int wsKill, int[] blood, int[] lhKill, int[] money) {
         return 0;
     }

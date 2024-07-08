@@ -15,7 +15,7 @@ import java.util.LinkedList;
 public class Ques_009 {
 
     // 数字转字符串
-    public boolean isPalindrome1(int x){
+    public boolean isPalindrome1(int x) {
         String str1 = String.valueOf(x);
         StringBuilder sb = new StringBuilder();
         sb.append(str1);

@@ -19,7 +19,7 @@ import java.util.Arrays;
  * https://leetcode.cn/problems/cherry-pickup-ii/description
  * <p>
  * 解题思路:
- *      三维动态规划
+ * 三维动态规划
  */
 public class Demo_0507 {
 

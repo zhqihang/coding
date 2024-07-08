@@ -23,7 +23,7 @@ public class Code06_OneKindNumberLessMTimes {
 
         int ans = 0;
         for (int i = 0; i < 32; i++) {
-            if (counts[i] % m != 0){
+            if (counts[i] % m != 0) {
                 ans |= 1 << i;
             }
         }

@@ -8,7 +8,6 @@ import java.util.Iterator;
  * @Date: 2024/05/04
  * @Project: coding
  * @Description: 最长连续子序列
- *
  */
 public class Demo_128 {
     public int longestConsecutive(int[] nums) {

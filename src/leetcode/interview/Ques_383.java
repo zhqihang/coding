@@ -28,6 +28,7 @@ public class Ques_383 {
         }
         return true;
     }
+
     // 标准哈希实现
     public boolean canConstruct1(String ransomNote, String magazine) {
         HashMap<Character, Integer> map = new HashMap<>();

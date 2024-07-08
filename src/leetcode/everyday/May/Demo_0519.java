@@ -17,8 +17,8 @@ package leetcode.everyday.May;
  * 解释：3 将会在前 10 个回合中连续获胜。
  * <p>
  * 解题思路:
- *      1.记录数组首位
- *      2.
+ * 1.记录数组首位
+ * 2.
  */
 public class Demo_0519 {
 

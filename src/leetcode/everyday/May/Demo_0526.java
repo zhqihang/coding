@@ -15,7 +15,6 @@ import java.util.Arrays;
  * 输出：7
  * 解释：坐标 (0,1) 的值是 5 XOR 2 = 7 ，为最大的值。
  * https://leetcode.cn/problems/find-kth-largest-xor-coordinate-value/description
- *
  */
 public class Demo_0526 {
 

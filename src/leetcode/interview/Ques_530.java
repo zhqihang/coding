@@ -24,14 +24,14 @@ public class Ques_530 {
     }
 
     private void dfs(TreeNode root) {
-        if (root == null){
+        if (root == null) {
             return;
         }
         dfs(root.left);
-        if (pre==-1){
-            pre=root.val;
-        }else {
-            ans = Math.min(ans, root.val -pre);
+        if (pre == -1) {
+            pre = root.val;
+        } else {
+            ans = Math.min(ans, root.val - pre);
             pre = root.val;
         }
         dfs(root.right);

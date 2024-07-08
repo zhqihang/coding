@@ -28,7 +28,7 @@ public class Video_012 {
                 }
                 // set tail
                 leftTail = head;
-            // 大于范围
+                // 大于范围
             } else {
                 if (rightHead == null) {
                     rightHead = head;
@@ -41,7 +41,7 @@ public class Video_012 {
         }
         // 默认返回左头 这里对左头进行判断
         // 如果没有小于的 直接返回右头结点
-        if (leftHead == null){
+        if (leftHead == null) {
             return rightHead;
         }
         leftTail.next = rightHead;
@@ -51,13 +51,13 @@ public class Video_012 {
     // 单链表节点
     public static class ListNode {
         public int val;
-        public Video_012.ListNode next;
+        public ListNode next;
 
         public ListNode(int val) {
             this.val = val;
         }
 
-        public ListNode(int val, Video_012.ListNode next) {
+        public ListNode(int val, ListNode next) {
             this.val = val;
             this.next = next;
         }

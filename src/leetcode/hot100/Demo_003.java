@@ -14,10 +14,10 @@ import java.util.Map;
  * <p>
  * 滑动窗口解决
  * 思路1: 哈希表 维护字符第一次出现的位置, 根据put方法的返回值判断是否出现重复字符
- *
+ * <p>
  * 思路2: 数组 维护字符第一次出现的位置, 寻找 每个位置 结尾 的 无重复字符子串窗口
- *       右边界来到字符 x 此时 左边界 = max(左边界，字符x上一次出现的位置 + 1)
- *
+ * 右边界来到字符 x 此时 左边界 = max(左边界，字符x上一次出现的位置 + 1)
+ * <p>
  * https://leetcode.cn/problems/longest-substring-without-repeating-characters/description/
  */
 public class Demo_003 {

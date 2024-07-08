@@ -13,14 +13,14 @@ package leetcode.everyday.May;
  * 一旦所有项目中的全部阶段任务都完成，或者仅剩余一个阶段任务都会导致你违反上面的规则，那么你将 停止工作 。
  * 注意，由于这些条件的限制，你可能无法完成所有阶段任务。
  * 返回在不违反上面规则的情况下你 最多 能工作多少周。
- *
-
+ * <p>
+ * <p>
  * 输入：milestones = [1,2,3]
  * 输出：6
  * https://leetcode.cn/problems/maximum-number-of-weeks-for-which-you-can-work/description
  * 解题思路:
- *   对这个数组进行减一操作 但是有个限制: 不能连续同一个位置操作两次
- *   请给出最大的操作次数
+ * 对这个数组进行减一操作 但是有个限制: 不能连续同一个位置操作两次
+ * 请给出最大的操作次数
  * - 转化为构造序列 : 构造一个尽量长的,相邻元素不同的序列, 且元素x的出现次数不能超过 milestones[x]
  */
 public class Demo_0516 {

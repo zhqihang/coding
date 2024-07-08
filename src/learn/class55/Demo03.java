@@ -33,7 +33,7 @@ public class Demo03 {
         int wsize = workers.length;
         int ans = 0;
         // [0, Math.min(tsize, wsize)]
-        for (int l = 0, r = Math.min(tsize, wsize), m; l <= r;) {
+        for (int l = 0, r = Math.min(tsize, wsize), m; l <= r; ) {
             // m中点，表示一定要完成的任务数量
             m = (l + r) / 2;
             // 任务选最小的   工人选最壮的

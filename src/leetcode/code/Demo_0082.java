@@ -21,7 +21,7 @@ public class Demo_0082 {
                 // 删除所有相等的节点
                 while (cur.next != null && cur.next.val == val)
                     cur.next = cur.next.next;
-            // 如果不相等 向后便遍历
+                // 如果不相等 向后便遍历
             else
                 cur = cur.next;
         }

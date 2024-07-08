@@ -9,9 +9,9 @@ package leetcode.everyday.June;
  * 请你将 n 颗糖果分给 3 位小朋友，确保没有任何小朋友得到超过 limit 颗糖果，请你返回满足此条件下的 总方案数 。
  * 输入：n = 5, limit = 2
  * 输出：3
- *
+ * <p>
  * https://leetcode.cn/problems/distribute-candies-among-children-i/description/
- *
+ * <p>
  * 先计算不受限制的所有方案数 再减去不满足 limit 的方案数
  */
 public class Demo_0601 {

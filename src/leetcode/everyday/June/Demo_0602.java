@@ -15,7 +15,7 @@ import java.util.Set;
  * 给你一个长度为 n 的整数数组 candyType ，
  * 返回： Alice 在仅吃掉 n / 2 枚糖的情况下，可以吃到糖的 最多 种类数。
  * https://leetcode.cn/problems/distribute-candies/description
- *
+ * <p>
  * 输入：candyType = [1,1,2,2,3,3]
  * 输出：3
  * 解释：Alice 只能吃 6 / 2 = 3 枚糖，由于只有 3 种糖，她可以每种吃一枚。
