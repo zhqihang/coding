@@ -58,6 +58,8 @@ public class Code_01 {
         // 算法
         int[] extracted = extracted(pos, ans);
         out.print(extracted[0] + " " +extracted[1]);
+        out.flush();
+        out.close();
     }
 
     private static int[] extracted(Map<Integer, Set<String>> pos, String ans) {
