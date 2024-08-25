@@ -11,18 +11,18 @@ package leetcode.hot100;
  */
 public class Demo_287 {
     /*
-
+    数组想象成单链表 --> 寻找入环节点 --> 快慢指针
      */
-
     public int findDuplicate(int[] nums) {
         if (nums == null || nums.length < 2) return -1;
-        int slow = nums[0];
-        int fast = nums[nums[0]];
+        // 快慢指针遍历链表
+        int slow = nums[0], fast = nums[nums[0]]; // 初始化
         while (slow != fast) {
-            slow = nums[slow];
-            fast = nums[nums[fast]];
+            slow = nums[slow]; // 慢指针走一步
+            fast = nums[nums[fast]]; // 快指针走两步
         }
-        fast = 0;
+        // 相遇后 fast回到起点 两个指针一次走一步 相遇时为入环节点
+        fast = 0; // 相当于头结点
         while (slow != fast) {
             fast = nums[fast];
             slow = nums[slow];
