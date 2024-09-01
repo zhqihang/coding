@@ -33,17 +33,17 @@ public class Code_01 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StreamTokenizer in = new StreamTokenizer(br);
         PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
-        in.nextToken(); // 读取n之前的分隔符
-        n = (int) in.nval; // 读取n
+        in.nextToken(); // 读取 n 之前的分隔符
+        n = (int) in.nval; // 读取 n
         int[] a = new int[n];
         int[] b = new int[n];
         for (int i = 0; i < n; i++) {
-            in.nextToken(); // 读取a[i]之前的分隔符
-            a[i] = (int) in.nval; // 读取a[i]
+            in.nextToken(); // 读取 a[i] 之前的分隔符
+            a[i] = (int) in.nval; // 读取 a[i]
         }
         for (int i = 0; i < n; i++) {
-            in.nextToken(); // 读取b[i]之前的分隔符
-            b[i] = (int) in.nval; // 读取b[i]
+            in.nextToken(); // 读取 b[i] 之前的分隔符
+            b[i] = (int) in.nval; // 读取 b[i]
         }
         out.print(f(n, a, b));
         out.flush();

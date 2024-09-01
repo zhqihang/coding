@@ -1,5 +1,6 @@
 package leetcode.hot100;
 
+import java.util.*;
 /**
  * @description: 下一个排列
  * @author: zhqihang
@@ -32,7 +33,7 @@ public class Demo_031 {
             int j = nums.length - 1;
             while (j >= 0 && nums[i] >= nums[j]) {
                 j--;
-            }
+            } 
             swap(nums, i, j);
         }
         reverse(nums, i + 1);
