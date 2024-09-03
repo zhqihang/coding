@@ -8,8 +8,31 @@ package leetcode.hot100;
  * https://leetcode.cn/problems/longest-valid-parentheses/description/
  */
 public class Demo_032 {
-    // 左程云算法课 一维动态规划 例题
+
+
     public int longestValidParentheses(String str) {
+        char[] s= str.toCharArray();
+        int[] dp = new int[s.length];
+        int ans = 0;
+        for (int i = 1, p; i < s.length; i++) {
+            if (s[i] == ')') {
+                p = i - dp[i - 1] - 1;
+                if (p >= 0 && s[p] == '(') {
+                    dp[i] = dp[i - 1] + 2 + (p - 1 > 0 ? dp[p - 1] : 0);
+                } else {
+                    dp[i] = 0;
+                }
+            } else {
+                dp[i] = 0;
+            }
+            ans = Math.max(ans, dp[i]);
+        }
+        return ans;
+    }
+
+
+    // 左程云算法课 一维动态规划 例题
+    public int longestValidParentheses1(String str) {
         char[] s = str.toCharArray();
         // dp[i] 代表子串必须以 i 位置结尾 往左可以匹配多少有效长度
         int[] dp = new int[s.length];
