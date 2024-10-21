@@ -6,7 +6,7 @@ package 设计模式.单例模式;
  * @date: 2024/07/28
  */
 
-// 线程不安全版本
+// 线程不安全版本 懒汉模式
 public class Singleton_unsafe {
 
     private static Singleton_unsafe singleton = null;
